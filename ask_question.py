@@ -12,7 +12,7 @@ class QuestionBox(urwid.Filler):
             return super(QuestionBox, self).keypress(size, key)
 
         self.original_widget = urwid.Text(
-            u"Nice to meet you,\n%s.\n\nPress Q to exit." % edit.edit_text)
+            u"Nice to meet you, %s.\n\nPress Q to exit." % edit.edit_text)
 
 
 edit = urwid.Edit(u"What is your name?\n")
